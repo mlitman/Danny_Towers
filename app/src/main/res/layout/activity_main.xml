@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Towers of Hanoi"
+        android:textSize="36sp" />
+
+    <LinearLayout
+        android:id="@+id/landingZoneVG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onPressMeButtonClicked"
+            android:text="pop" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onPressMeButtonClicked"
+            android:text="pop" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="pop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tower0VG"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/disk0"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="#4CAF50" />
+
+            <TextView
+                android:id="@+id/disk1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="#673AB7" />
+
+            <TextView
+                android:id="@+id/disk2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark" />
+
+            <TextView
+                android:id="@+id/base0"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#111111" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/base1"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#111111" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".33"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/base2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#111111" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
